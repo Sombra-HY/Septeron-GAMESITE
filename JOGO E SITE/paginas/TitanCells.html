@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Septeron Digital</title>
+    <link rel="shortcut icon" type="imagex/png" href="Imagens/logo.png">
+    <link rel="stylesheet" href="estilo%20site%20e%20js/site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="jogo/canvasestilo.css" rel="stylesheet">
+</head>
+
+<body onload="musica()">
+
+<div class="linha"></div>
+<div class="sub_menu">
+    <div class="um">
+        <label>
+            <input type="checkbox" id="box">
+            <img src="Imagens/barras_menu.png" alt="barras_menu" id="invert" class="invert" width="50px">
+        </label>
+    </div>
+    <div class="dois">
+        <a href="2-jogos.html"><img src="Imagens/septaron_logo_preto.png" alt="Logo septaron" width="38%" id="logo" > </a>
+    </div>
+</div>
+<div id="menu" class='menute'>
+    <nav>
+        <ul>
+            <li><a href="2-jogos.html" style="color: black" id='txt'>JOGOS</a> </li>
+            <li><a href="3-desenvolvedores.html" id='txt'>DESENVOLVEDORES</a> </li>
+            <li><a href="4-sobre.html" id='txt'>SOBRE</a> </li>
+        </ul>
+    </nav>
+</div>
+<div class="display">
+    <div>
+        <canvas id="tela" width="1280" height="720"></canvas>
+    </div>
+</div>
+<div class="instrucoes">
+    <div>
+        <p>
+            Para uma melhor experiência, utilize fones de ouvido.
+        </p>
+        <p>
+            INSTRUÇÕES
+        </p>
+        <p>
+            Mover para cima: Seta para cima<br>
+            Mover para baixo: Seta para baixo<br>
+            Mover para direita: Seta para direita<br>
+            Mover para esquerda: Seta para esquerda<br>
+            Atacar: Tecla "Z" <br>
+            DICA: (Fique atento ao tempo de exaustão do personagem, só é possivel atacar quando a barra lateral da esquerda inferior estiver vermelha)<br>
+        </p>
+    </div>
+    <div>
+        <p>
+            O personagem se movimenta livremente pelo mapa, tentando arranjar tempo e estratégia para atacar o Cavaleiro Supremo. Se o Cavaleiro for atingido, ele irá ser jogado para longe. A medida em que o cavaleiro leva dano ele volta a perseguir o personagem, partindo da mesma posição inicial, mas com a velocidade aumentada. Após uma certa quantidade de dano levado , o Cavaleiro Supremo adquire a habilidade de se teletransportar, gerando-se aleatóriamente mais próximo do personagem.
+            Se O Cavaleiro Supremo atingir o personagem, este morre imediatamente
+            concebendo a derrota (Game Over).
+            Só é possível ganhar, após a barra de vida do Cavaleiro Supremo se esgotar por completo.
+        </p>
+    </div>
+    <div>
+
+    </div>
+</div>
+
+<div class="rodape">
+    <div class="social">
+        <div>
+            <a href="https://www.instagram.com/septerondigital/"><i class="icon ion-social-instagram"></i></a>
+        </div>
+        <div>
+            <a href="https://twitter.com/SepteronDigital"><i class="icon ion-social-twitter"></i></a>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100011413220595"><i class="icon ion-social-facebook"></i></a>
+        </div>
+    </div>
+    <div class="lista">
+        <div>
+            <a href="2-jogos.html">HOME</a>
+        </div>
+        <div>
+            <a href="PoliticaTerms.html">Política de Privacidade</a>
+        </div>
+        <div>
+            <a href="termos.html">Termos de Uso</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Septeron © 2022
+        </p>
+    </div>
+</div>
+
+<script src="estilo%20site%20e%20js/site.js" type="text/javascript"></script>
+<script type="text/javascript" src="jogo/canvas.js" style="border: black solid 10px"></script>
+</body>
+</html>

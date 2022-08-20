@@ -1,0 +1,427 @@
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #3d3d3d;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #db4144;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../Imagens/20220503_222634.jpg") ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.menute a{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+}
+li {
+    list-style-type: none;
+}
+/* funcao que inverte cor das barras do menu ----------------------------------------------------------------*/
+
+.invert{
+        filter:invert(100%);
+        cursor: pointer;
+    }
+
+/* itens referidos ao menu ------------------------------------------------------------------------------*/
+.sub_menu{
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 11%;
+        top: 0.9%;
+    }
+.sub_menu .um{
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        z-index: +2;
+
+    }
+.dois{
+  cursor: pointer;
+}
+
+.sub_menu .dois {
+    position: absolute;
+    top:20px;
+    margin-left: 43%;
+    z-index: +2;
+}
+
+@media only screen and (max-width: 1400px) {
+    .sub_menu .dois {
+        position: absolute;
+        top:20px;
+        margin-left: 40%;
+        z-index: +2;
+    }
+
+}
+
+input[type='checkbox']{
+    display: none;
+    }
+
+#menu{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #db4144;
+        z-index: +1;
+        top: -99.1%;
+        transition: top 700ms;
+    }
+ul{
+        margin-top: 10%;
+    }
+li{
+        border-top: white dotted 1px;
+        border-bottom: white dotted 1px;
+        text-align: left;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+a:hover{
+        color: black;
+    }
+
+
+/* PAGINA DESENVOLVEDORES --------------------------------------------------------------------------  */
+
+.foto{
+  display: flex;
+  justify-content: space-around;
+}
+
+.foto div {
+}
+.foto img{
+  border-radius: 10%;
+}
+/*texto DESENVOLVEDORES -------------------------------------------------------------------------------*/
+.desentitulo {
+    text-align: center;
+    color: #db4144;
+    font-size: 35px;
+    font-family: 'Bungee Shade', cursive;
+
+}
+
+.nome {
+  text-align: center;
+    font-family: 'Bungee Inline', cursive;
+    color: #db4144;
+    font-size: 30px;
+
+}
+
+.nome2 {
+    font-family: 'Bungee Inline', cursive;
+    color: #db4144;
+    font-size: 30px;
+}
+.blibiografia{
+  display: flex;
+  justify-content: space-around;
+}
+.blibiografia div p{
+  width: 500px;
+  font-size: 17px;
+
+}
+
+/*  */
+p {
+  font-size: 22px;
+  color: white;
+    font-family: 'Bungee Inline', cursive;
+}
+
+/*SOBRE-----------------------------------------------------------------------------*/
+.sobre {
+    margin-right: 150px;
+    font-size: 35px;
+    text-align: center ;
+    font-family: 'Bungee Shade', cursive;
+    color: #db4144;
+}
+
+.cabecalhosobre {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.cabecalhosobre .b p{
+    margin-right: 200px;
+    font-family: 'Bungee Inline', cursive;
+    width: 800px;
+    margin-top: 0px;
+    color: white;
+    font-size: 18px;
+
+
+
+}
+
+.cabecalhosobre .sr {
+    padding: 50px;
+    margin-left: 300px;
+    margin-bottom: 200px;
+    margin-top: 0px;
+    border-radius: 17%;
+}
+
+/*fim do sobre--------------------------------------------------------------------------------------*/
+
+/*RODAPE DE TODAS AS PÁGINAS--------------------------------------------------------------------------*/
+
+.rodape {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:10px 0;
+  background-color: #3d3d3d;
+  color:#6bb0f5;
+
+}
+
+.lista ,.social{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+
+
+}
+
+.social div{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+
+.lista div {
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.social div a {
+    color: #db4144;
+    font-size: 40px;
+}
+
+.lista div a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.lista div a:hover,.social div a:hover {
+    color: #262424;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: 15px;
+}
+
+/*PAGINA JOGOS----------------------------------------------------------------------------------------*/
+/*slide*/
+
+.slidetodos {
+    display: flex;
+    height: 900px;
+}
+
+@media only screen and (max-width: 1920px) {
+    .slidetodos {
+        display: flex;
+        height: 800px;
+        padding-bottom: 200px;
+    }
+    .content{
+        height: 70%;
+        width: 65%;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        border-radius: 2%;
+        margin-top: 500px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .slidetodos {
+        display: flex;
+        height: 600px;
+        padding-bottom: 10px;
+    }
+    .content{
+        height: 70%;
+        width: 70%;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50% ,5%);
+        border-radius: 2%;
+        margin-top: 100px;
+    }
+    .SinopseText {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 400px;
+        text-align: justify;
+        margin-bottom: 90px;
+    }
+    .SinopseText p{
+        font-family: "Arial Black";
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .persona1,.persona2{
+        width: 300px;
+    }
+    .SinopseImg .imga {
+        justify-content: center;
+        align-items: center;
+        padding-left: 60px;
+    }
+    .SinopseGame {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.navegacao{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.bar{
+  width: 60px;
+  height: 15px;
+  border: solid 2px white;
+  border-radius: 7px;
+  margin: 10px;
+  cursor: pointer;
+  transition: .4s;
+}
+.bar:hover{
+  background-color: #db4144;
+}
+.slides input{
+  display: none;
+}
+.slides{
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+    background-color: #db4144;
+}
+#slide1:checked ~ .s1{
+  margin-left:0 ;
+}
+#slide2:checked ~.s1{
+  margin-left:-20% ;
+}
+#slide3:checked ~.s1{
+  margin-left:-40% ;
+}
+#slide4:checked ~.s1{
+  margin-left:-60% ;
+}
+#slide5:checked ~.s1{
+    margin-left:-80% ;
+}
+
+.SinopseGame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.SinopseGame .SinopseImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-bottom: 200px;
+}
+
+.SinopseImg .imga {
+    justify-content: center;
+    align-items: center;
+    padding-left: 170px;
+}
+
+.SinopseImg a {
+    text-align: center;
+    color: white;
+    border: #db4144 solid 2px;
+    border-radius: 5% ;
+    margin-left: 260px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Bungee Inline', cursive;
+    opacity: 1;
+    background-color: #db4144;
+}
+
+.SinopseImg a:hover {
+    color: black;
+}
+
+.SinopseText {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-right: 200px;
+    width: 800px;
+    text-align: justify;
+    margin-bottom: 180px;
+}
+
+
+.Privacidade, .Servico {
+    text-align: center;
+    color: white;
+
+}
+
+/* fim do slide----------------------------------------------------------------------------------------*/
+/* fim do site jogo-------------------------------------------------------------------------------------- */

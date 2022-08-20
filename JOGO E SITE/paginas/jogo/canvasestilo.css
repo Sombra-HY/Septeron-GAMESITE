@@ -1,0 +1,23 @@
+
+.display{
+    display: flex;
+    justify-content: center;
+}
+.display div{
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+.instrucoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.instrucoes div{
+    text-align: center;
+    border: #db4144 2px solid;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+canvas{
+    border: black 5px solid;
+}
